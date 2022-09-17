@@ -136,9 +136,9 @@ setAlarm.addEventListener("click", e => {
     if (h > 12) {
       h = h - 12;
     }
-    // if (h < 10) {
-    //   h = '0' + h;
-    // }
+    if (h < 10) {
+      h = '0' + h;
+    }
     // if (m < 10) {
     //   m = '0' + m;
     // }
