@@ -1,0 +1,248 @@
+* {
+    /* padding: 0; */
+    margin: 0;
+}
+
+body {
+    background-color: rgb(165, 184, 187);
+    /* align-items: center; */
+    /* display: inline-block; */
+
+}
+
+.MainContainer {
+    margin-top: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+#heading {
+    font-family: roboto;
+}
+
+.container {
+    height: 340px;
+    width: 320px;
+    background-color: rgb(47, 49, 49);
+    border-radius: 12px;
+    /* margin-top: 10px;
+    margin-left: 40%; */
+    border: 2px solid rgb(235, 228, 228);
+    color: white;
+    margin: 10px 10px 10px 10px;
+    overflow-y: scroll;
+
+}
+
+.container #LiveTime {
+    margin-top: 26px;
+}
+
+#AlarmLists{
+    display: flex;
+    font-family: roboto;
+    margin-left: 50px;
+    /* position: sticky;
+    top: 130px; */
+    margin-top: 12px;
+    /* background-color: rgb(47, 49, 49); */
+    /* width: 200px; */
+    /* justify-content: left; */
+    /* margin-bottom: 0px; */
+
+
+}
+.nav {
+    /* margin-top: 0px; */
+    height: 50px;
+    width: 100%;
+    background-color: rgb(101, 132, 158);
+    /* display: inline-flex; */
+
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    /* flex-direction: row; */
+    /* float: inline-start; */
+    /* flex-grow: 10%; */
+    font-family: open Sans;
+}
+
+.nav li a {
+    display: block;
+    color: #000;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.nav li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: rgb(47, 49, 49);
+    height: 30px;
+    color: white;
+}
+
+.ListOfALarms {
+    /* font-family: Roboto Condensed; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 5px 5px 5px 5px;
+  
+
+}
+
+/* .containerInner{
+    overflow-y: scroll;
+} */
+
+/* .containerInner{
+    /* margin-top: -10px; */
+
+.display {
+    position: sticky;
+    top: 26px;
+    background-color: rgb(47, 49, 49);
+    ;
+    height: 130px;
+    z-index: 1;
+}
+
+
+/* list decoration */
+.Alarms ul{
+    
+  list-style: none;  
+  /* padding: 10px 10px; */
+  margin: 0px 10px 10px 10px;
+  /* margin-right: 50px; */
+}
+#alarmTime li{
+
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-family: Roboto;
+    
+}
+#AlarmLists{
+    /* margin-bottom: 5px; */
+    margin-left: 70px;
+}
+
+
+/* delete button of the added alarms */
+.delete-btn{
+
+    float: right;
+    background-color: transparent;
+    border:none;
+    /* position: relative; */
+    margin-left: 20px;
+    margin-top: 2px;
+    color: #2feca7;
+    
+}
+
+/* delete button of the added alarms when hover on it*/
+.delete-btn:hover{
+    color: rgb(184, 165, 165);
+    cursor:pointer;
+}
+
+
+.inputs {
+    margin: 8px 5px -8px 5px;
+    /* background-color: #04AA6D; */
+}
+
+.Alarms {
+    /* margin: 10px 3px 3px 3px; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    font-family: open Sans ,Roboto;
+}
+
+#LiveTime {
+
+    font-family: roboto;
+    margin-top: 10px;
+}
+
+#time {
+    font-family: roboto;
+    width: 150px;
+    height: 46px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    margin: 8px 0;
+    font-size: 0.79rem;
+    /* color:#000;
+    background-color: rgb(106, 108, 133); */
+    border-radius: 5px;
+    border: none;
+
+
+}
+#time:hover{
+    cursor: pointer;
+}
+
+.SetAlarm {
+    font-family: open Sans;
+    color: rgb(255, 255, 255);
+    background-color: rgb(165, 184, 187);
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.SetAlarm:hover {
+    /* height: 48px; */
+    /* width: 98px; */
+    border-radius: 6px;
+    /* background-color: rgb(68, 116, 82); */
+    /* padding-left: 2px; */
+    /* position: static; */
+    /* font-size: 1rem; */
+    cursor: pointer;
+
+}
+
+
+/* custome scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* border-radius: 2px; */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+
+}

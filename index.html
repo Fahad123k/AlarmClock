@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlarmClock</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- font awesme link -->
+    <script src="https://kit.fontawesome.com/a0ced3cb41.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="nav" id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="About">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">ChangeTheme</a></li>
+            <li><a href="#" id="Switch" >Day Mode</a></li>
+        </ul>
+
+    </div>
+    <div class="MainContainer">
+
+        <span style="text-align:center ">
+            <h1 id="heading"> Alarm clock</h1>
+            <div class="container" id="container">
+
+                <div class="display" id="display">
+                    <h2 id="LiveTime">06:23:36:AM</h2>
+                    <div class="inputs">
+                        <input type="time" id="time" name="appt-time" required step="2">
+                        <button style="margin-left:12px" class="SetAlarm" type="submit" id="SetAlarm">Set Alarm</button>
+                    </div>
+                    <h5 id="AlarmLists">Alarms</h5>
+                </div>
+                <div class="ListOfALarms">
+                    <div class="containerInner">
+
+                        <div class="Alarms">
+                            <ul id="alarmTime"></ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </span>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
