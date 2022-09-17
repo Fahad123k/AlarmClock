@@ -248,6 +248,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
     .nav ul {
         list-style-type: none;
         display: flex;
@@ -277,13 +278,12 @@ body {
         /* color: white; */
         opacity: 0.88;
     }
-    .nav li a{
-        /* border-bottom: 1px solid black; */
-        /* margin-left: 100px; */
+    #alarmTime li{
 
+        margin-top: 10px;
+        font-size: 1rem;
+        font-family: Roboto;
+        
     }
-   /* .MainContainer{
-    margin-top: 180px;
-   } */
-  
+ 
   }
