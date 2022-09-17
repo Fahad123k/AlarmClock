@@ -246,3 +246,44 @@ body {
     background: #555;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        
+        /* float: inline-start; */
+        /* flex-grow: 10%; */
+        font-family: open Sans;
+    }
+    .nav {
+        /* margin-top: 0px; */
+        height: 220px;
+        width: 100%;
+        background-color: rgb(101, 132, 158);
+        /* display: inline-flex; */
+        /* display: flex;
+        justify-content: center;
+        align-content: center; */
+   
+    
+    }
+    .nav li a:hover:not(.active) {
+        background-color: rgb(47, 49, 49);
+        height: 30px;
+        /* width: 89%; */
+        margin-left: -50px;
+        /* color: white; */
+        opacity: 0.88;
+    }
+    .nav li a{
+        /* border-bottom: 1px solid black; */
+        /* margin-left: 100px; */
+
+    }
+   /* .MainContainer{
+    margin-top: 180px;
+   } */
+  
+  }
