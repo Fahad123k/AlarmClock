@@ -133,6 +133,7 @@ setAlarm.addEventListener("click", e => {
     // split time 
     var [h, m, s] = getTime.split(":");
     var amPm = ((h % 12 + 12 * (h % 12 == 0)) + ":" + m, h >= 12 ? 'PM' : 'AM');
+
     if (h > 12) {
       h = h - 12;
     }
@@ -142,9 +143,13 @@ setAlarm.addEventListener("click", e => {
     if (m < 10) {
       m = '0' + m;
     }
-    if (s < 10) {
-      s = '0' + s;
-    }
+    // if (s < 10) {
+    //   s = '0' + s;
+    // }
+    // if (s == 000) {
+    //   s = '00' ;
+    // }
+
 
 
     // alert("alarm set at-" + h + " " + m + " " + s + " " + amPm);
