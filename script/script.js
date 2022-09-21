@@ -1,6 +1,4 @@
 
-
-
 // fetch audio of alarm ring
 var alarmRing = new Audio("./assests/sounds/assets_alarm.mp3");
 
@@ -18,19 +16,23 @@ var alarmListArray = [];
 const alarmHistory = document.getElementById("alarmTime");
 
 
-
-// about
+// about clicking effect
 const About = document.getElementById("About");
 About.addEventListener('click', function onClick(event) {
   // event.target.style.backgroundColor = 'salmon';
   alert("this app is developed by Md nishu Ahmad");
-  // document.g("alert").innerText="hello"
-  // console.log(alert)
 
+})
+// contact clicking effect
+const contact = document.getElementById("contact");
+contact.addEventListener('click', function onClick(event) {
+  // event.target.style.backgroundColor = 'salmon';
+  alert("Name: Md Nishu Ahamd Email:'\n'Ahmad.nishu08@gmail.com Add:Ranchi Jharkahnd");
 
 })
 // fetch button to switch mode
 const btn = document.getElementById('Switch');
+
 var isNightMode = false;
 // switch
 btn.addEventListener('click', function onClick(event) {
