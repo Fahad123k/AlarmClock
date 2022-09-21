@@ -29,7 +29,7 @@ About.addEventListener('click', function onClick(event) {
 
 
 })
-
+// fetch button to switch mode
 const btn = document.getElementById('Switch');
 var isNightMode = false;
 // switch
@@ -220,6 +220,7 @@ function LiveTime() {
   }
 
 }
+
 
 
 // display the time when the page loaded itself
