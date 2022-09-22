@@ -27,7 +27,7 @@ About.addEventListener('click', function onClick(event) {
 const contact = document.getElementById("contact");
 contact.addEventListener('click', function onClick(event) {
   // event.target.style.backgroundColor = 'salmon';
-  alert("Name: Md Nishu Ahamd Email:'\n'Ahmad.nishu08@gmail.com Add:Ranchi Jharkahnd");
+  alert("Name: Md Nishu Ahamd '\n'Email:Ahmad.nishu08@gmail.com Add:Ranchi Jharkahnd");
 
 })
 // fetch button to switch mode
@@ -43,7 +43,7 @@ btn.addEventListener('click', function onClick(event) {
     document.getElementById('container').style.backgroundColor = "rgb(47, 49, 49)";
     document.getElementById('display').style.backgroundColor = "rgb(47, 49, 49)";
     document.getElementById('SetAlarm').style.backgroundColor = "rgb(165, 184, 187)";
-    // document.getElementById('nav').style.backgroundColor="rgb(101, 132, 158)";
+    // document.getElementById('nav li a:hover').style.backgroundColor="rgb(165, 184, 187);";
     document.getElementById('heading').style.color = "black";
     document.getElementById('LiveTime').style.color = "white";
     document.getElementById('AlarmLists').style.color = "white";
@@ -59,7 +59,7 @@ btn.addEventListener('click', function onClick(event) {
     document.getElementById('container').style.backgroundColor = "rgb(101, 132, 158)";
     document.getElementById('display').style.backgroundColor = "rgb(101, 132, 158)";
     document.getElementById('SetAlarm').style.backgroundColor = "rgb(47, 49, 49)";
-    // document.getElementById('nav').style.backgroundColor="black";
+    // document.getElementById('nav li a:hover').style.backgroundColor="black";
     // document.getElementsByTagName(a).style.backgroundColor="rgb(101, 132, 158)";
     document.getElementById('heading').style.color = "white";
     document.getElementById('LiveTime').style.color = "black";

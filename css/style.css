@@ -39,7 +39,7 @@ body {
     margin-top: 26px;
 }
 
-#AlarmLists{
+#AlarmLists {
     display: flex;
     font-family: roboto;
     margin-left: 50px;
@@ -53,6 +53,7 @@ body {
 
 
 }
+
 .nav {
     /* margin-top: 0px; */
     height: 50px;
@@ -85,6 +86,7 @@ body {
 
 .nav li a:hover:not(.active) {
     background-color: rgb(47, 49, 49);
+    /* background-color: rgb(165, 184, 187); */
     height: 30px;
     color: white;
 }
@@ -95,7 +97,7 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     margin: 5px 5px 5px 5px;
-  
+
 
 }
 
@@ -117,43 +119,45 @@ body {
 
 
 /* list decoration */
-.Alarms ul{
-    
-  list-style: none;  
-  /* padding: 10px 10px; */
-  margin: 0px 10px 10px 10px;
-  /* margin-right: 50px; */
+.Alarms ul {
+
+    list-style: none;
+    /* padding: 10px 10px; */
+    margin: 0px 10px 10px 10px;
+    /* margin-right: 50px; */
 }
-#alarmTime li{
+
+#alarmTime li {
 
     margin-top: 10px;
     font-size: 0.8rem;
     font-family: Roboto;
-    
+
 }
-#AlarmLists{
+
+#AlarmLists {
     /* margin-bottom: 5px; */
     margin-left: 70px;
 }
 
 
 /* delete button of the added alarms */
-.delete-btn{
+.delete-btn {
 
     float: right;
     background-color: transparent;
-    border:none;
+    border: none;
     /* position: relative; */
     margin-left: 20px;
     margin-top: 0px;
     color: #2feca7;
-    
+
 }
 
 /* delete button of the added alarms when hover on it*/
-.delete-btn:hover{
+.delete-btn:hover {
     color: rgb(184, 165, 165);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -167,7 +171,7 @@ body {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
-    font-family: open Sans ,Roboto;
+    font-family: open Sans, Roboto;
 }
 
 #LiveTime {
@@ -191,7 +195,8 @@ body {
 
 
 }
-#time:hover{
+
+#time:hover {
     cursor: pointer;
 }
 
@@ -246,20 +251,23 @@ body {
     background: #555;
 
 }
+
 .nav .icon {
     display: none;
-  }
+}
+
 @media only screen and (max-width: 600px) {
 
     .nav ul {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        
+
         /* float: inline-start; */
         /* flex-grow: 10%; */
         font-family: open Sans;
     }
+
     .nav {
         /* margin-top: 0px; */
         height: 220px;
@@ -269,9 +277,10 @@ body {
         /* display: flex;
         justify-content: center;
         align-content: center; */
-   
-    
+
+
     }
+
     .nav li a:hover:not(.active) {
         background-color: rgb(47, 49, 49);
         height: 30px;
@@ -280,31 +289,40 @@ body {
         /* color: white; */
         opacity: 0.88;
     }
-    #alarmTime li{
+
+    #alarmTime li {
 
         margin-top: 10px;
         font-size: 1rem;
         font-family: Roboto;
-        
+
     }
-    .nav a:not(:first-child) {display: none;}
+
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
     .nav a.icon {
         float: right;
         display: block;
-      }
- 
-  }
+    }
 
-  @media screen and (max-width: 600px) {
-    .nav.responsive {position: relative;}
+}
+
+@media screen and (max-width: 600px) {
+    .nav.responsive {
+        position: relative;
+    }
+
     .nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
     .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
-  }
+}
