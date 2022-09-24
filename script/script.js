@@ -139,8 +139,14 @@ setAlarm.addEventListener("click", e => {
     if (h > 12) {
       h = h - 12;
     }
-    if (h < 10) {
-      h = '0' + h;
+
+    if (amPm != "AM") {
+      if (h < 10) {
+        h = '0' + h;
+      }
+    }
+    if(h==12){
+      h=00;
     }
     // if (m < 10) {
     //   m = '0' + m;
@@ -157,6 +163,7 @@ setAlarm.addEventListener("click", e => {
     // alert("alarm set at-" + h + " " + m + " " + s + " " + amPm);
     const newAlarm = `${h}:${m}:${s} ${amPm}`;
     // console.log(h + " " + m + " " + s + " " + amPm)
+    console.log("hr at am" + h)
     console.log(newAlarm)
     if (!alarmListArray.includes(newAlarm)) {
       alarmListArray.push(newAlarm);
